@@ -62,3 +62,75 @@ button{
 .btn{
     align-self: flex-start;
 }
+
+/* Card Design  */
+.card-container{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    margin: 100px 100px 50px 100px;
+}
+.card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    transition: all 1s ease-in-out;
+}
+.card:hover{
+    opacity: 0.8;
+    box-shadow: 10px 5px 5px gray ;
+}
+.card-heading{
+    font-size: 18px;
+    font-weight: 600;
+    margin:0;
+}
+/* MENU Design  */
+.menu{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+.menu-tag{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+    background-color: #149F39;
+    padding: 10px 20px;
+    align-self: center;
+}
+.grid{
+    display: grid;
+    gap:10px;
+    grid-template-areas:
+        "I1 I1 I2 I3"
+        "I1 I1 I2 I7"
+        "I4 I5 I6 I7" ;
+}
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+}
