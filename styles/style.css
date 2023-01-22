@@ -134,3 +134,66 @@ button{
 .item7{
     grid-area: I7;
 }
+
+/* Footer Design  */
+footer{
+    margin-top: 100px;
+    background-color: #ffc472e8;
+    display: flex;
+    gap:50px;
+    justify-content: space-around;
+    padding: 100px;
+}
+li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.social-icons li{
+    padding-right: 5px;
+}
+input{
+    padding : 2px 5px;
+}
+
+@media (max-width:786px) {
+    body{
+        margin: 0;
+    }
+    .hero-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main-text{
+        font-size: 32px;
+    }
+    .tag{
+        align-self: center;
+    }
+    .tag-menu{
+        align-self: center;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .btn{
+        align-self: center;
+    }
+    .grid{
+        grid-template-areas:
+        "I1 I1"
+        "I1 I1"
+        "I3 I4"
+        "I2 I7"
+        "I5 I6";
+    }
+    footer{
+        flex-direction: column;
+        padding: 0 0 10 0;
+        margin: 10px;
+        justify-content: center;
+    }
+}
